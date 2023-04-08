@@ -8,6 +8,29 @@
     font-size: 100%;
   }
 
+  html{
+    position:relative; 
+    min-height: 100%;
+  }
+  /*Normalize html and body elements,this style is just good to have*/
+  html,body{
+    margin:0;
+    padding:0;
+  }
+
+  .pageContentWrapper{
+    margin-bottom:50px;/* Height of footer*/
+  } 
+
+  .footer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height:50px;
+      background:#ccc;
+  }
+
 /*Header bar section*/
   .header{
     background: blue ;
@@ -73,9 +96,14 @@
 
   /*main content, img, text*/
   .main_content {
-    height: 600px;
     max-width: 1200px;
     margin: 0 auto 0 auto;
+  }
+
+  .LoginButton {
+    margin-top: 20px;
+    float: right;
+    padding-right: 5px;
   }
 /*
   #main_image{
@@ -107,7 +135,6 @@
   padding-left: 15px;
 }
 
-
 .event {
   padding-bottom: 10px;
 }
@@ -115,7 +142,6 @@
 .event_header h1 {
   font-size: 36px;
   padding-bottom: 30px;
-  
 }
 
 .welcome {
