@@ -14,7 +14,7 @@
     </Div>
 
     <DIV class="loginButton" >
-                <a href="logout.php"><button id="loginButton" disabled>Login</button></a>
+                <a href="Logout.php"><button id="loginButton" disabled>Login</button></a>
     </DIV>
 
     <?php 

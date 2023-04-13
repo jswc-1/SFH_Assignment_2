@@ -4,6 +4,22 @@ $Page = $_SERVER['HTTP_REFERER'];
 ?>
 <?php include 'getSession.php'; ?>
 
+<?php
+    switch ($Role) {
+        case "Admin":
+            $pix = "images/admin.gif";
+            break;
+        case "Manager":
+            $pix = "images/Manager.gif";
+            break;
+        case "CEO":
+            $pix = "images/CEO.jpg";
+            break;
+        default:
+            $pix = "images/admin.gif";
+    }
+?>
+
 <html>
     <head>
         <link rel="stylesheet" href="main.css">
@@ -22,16 +38,15 @@ $Page = $_SERVER['HTTP_REFERER'];
 
         <!--Main Content-->
         <div class="main_content">
-            <Div class="Welcome">Lost Password</Div>
-            <hr>
+            <Div class="Welcome">So Your Computer isn't Working</Div>
+        </div>
+
+        <div class="Welcome">
+            <img class="pix" src="<?=$pix?>" alt="Problem">
         </div>
 
         <div class="centerdiv">
-            <label>Enter Email to recovery password</label> <input type="text" name="email address" id="email" placeholder="Email" required>
-        <Div>
-        <br>
-        <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('Email Sent!')" ; value='Click to Recovery Password'>
+            <input type='button' name='Release' onclick="confirmAction('Good')" ; value='Is it Fixed?'>
         </div>
 
         <?php include 'footer.php'; ?>

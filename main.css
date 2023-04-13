@@ -18,6 +18,11 @@
     padding:0;
   }
 
+  .line {
+    height: 3px;
+    color: black;
+  }
+
   .pageContentWrapper{
     margin-bottom:50px;/* Height of footer*/
   } 
@@ -108,6 +113,7 @@
   }
   
 
+/*set hr thichkess to 2 px*/
 
 /*
   #main_image{
@@ -123,6 +129,12 @@
     background-repeat: no-repeat;
 }
 */
+
+.pix
+{
+  width: auto;
+  margin: 0 auto 0 auto;
+}
 
 .main_image_text{
   position: absolute;
@@ -168,6 +180,19 @@ padding-bottom: 5px;
 
 .controls {
   border:1px solid black;
+}
+
+.centerdiv {
+margin: 0 auto 0 auto;
+width:100%;
+text-align: center;
+}
+
+.centerdiv input{
+  color: black;
+  background-color: rgb(112, 184, 212);
+  border: 1px solid black;
+  padding: 0 10 0 10;
 }
 
 /*Font size change when screen width < 800px */

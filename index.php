@@ -5,7 +5,7 @@
     </head>
     
     <body>
-        <?php include 'header.php'; ?>
+        <?php include 'Header.php'; ?>
 
         <!--Main Content-->
         <div class="main_content">
@@ -13,7 +13,7 @@
                 <Div class="Welcome"><h1>Welcome to Your IT Support System</h1></Div>
             </div>
         
-            <form action="problem.php" method="post">
+            <form action="transfer.php" method="post">
                 <!-- add a drop down menu for the problem type -->
                 <select name="Title" id="Title">
                     <option value="Mr">Mr</option>

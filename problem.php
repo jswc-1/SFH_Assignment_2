@@ -1,10 +1,4 @@
-<?php
-session_start();
-$_SESSION["Title"] = $_POST["Title"];
-$_SESSION["FName"] = $_POST["FName"];
-$_SESSION["LName"] = $_POST["LName"];
-$_SESSION["Role"] = $_POST["Role"];
-?>
+<?php session_start(); ?>
 <?php include 'getSession.php'; ?>
 
 <html>
@@ -14,34 +8,33 @@ $_SESSION["Role"] = $_POST["Role"];
     </head>
     
     <body>
-        <?php include 'header.php'; ?>
+        <?php include 'Header.php'; ?>
 
         <!--Main Content-->
         <div class="main_content">
             <Div class="Welcome"> Hello <?= $Role?></Div>
+            <hr class="line"/>  
+        
+
+            <h2>Here are your options</h2>
+            <?php
+            switch ($Role) {
+                case "Admin":
+                    echo '<a href="new-account.php">Create New Account</a>';
+                    break;
+                case "Manager":
+                    echo '<a href="lost-password.php">Lost Password</a>';
+                    break;
+                case "CEO":
+                    echo '<a href="need-help.php">Need Help</a>';
+                    break;
+                default:
+                    break;
+            }   
+            echo '<br>';
+            echo '<a href="isnt-working.php">My computer isn\'t working</a>';
+            ?>
         </div>
-
-        <hr>
-        <h2>Here are your options</h2>
-        <?php
-        switch ($Role) {
-            case "Admin":
-                //add a link to the new-account.php page
-                echo '<a href="new-account.php">Create New Account</a>';
-                echo '<br>';
-                echo '<a href="lost-password.php">View All Accounts</a>';
-                break;
-            case "Manager":
-                echo '<a href="manager.php"><button id="loginButton" disabled>Manager</button></a>';
-                break;
-            case "CEO":
-                echo '<a href="ceo.php"><button id="loginButton" disabled>CEO</button></a>';
-                break;
-            default:
-                echo '<a href="index.php"><button id="loginButton" disabled>Logout</button></a>';
-        }
-        ?>
-
         <?php include 'footer.php'; ?>
     </body>
 </html>

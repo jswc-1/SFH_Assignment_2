@@ -22,16 +22,11 @@ $Page = $_SERVER['HTTP_REFERER'];
 
         <!--Main Content-->
         <div class="main_content">
-            <Div class="Welcome">Lost Password</Div>
-            <hr>
+            <Div class="Welcome"> Need Help? <br> Please call: 902-123-4567</Div>
         </div>
 
         <div class="centerdiv">
-            <label>Enter Email to recovery password</label> <input type="text" name="email address" id="email" placeholder="Email" required>
-        <Div>
-        <br>
-        <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('Email Sent!')" ; value='Click to Recovery Password'>
+            <input type='button' name='Release' onclick="confirmAction('Help is on the way!')" ; value='Send me someone'>
         </div>
 
         <?php include 'footer.php'; ?>
