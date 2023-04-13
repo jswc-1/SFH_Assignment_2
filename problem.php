@@ -15,7 +15,6 @@
             <Div class="Welcome"> Hello <?= $Role?></Div>
             <hr class="line"/>  
         
-
             <h2>Here are your options</h2>
             <?php
             switch ($Role) {

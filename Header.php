@@ -1,7 +1,6 @@
     <!--Header section Begin-->
     <Div class="header">
         <div><img id="img_logo" src="images/paddle-white.png"></div>
-        <!--div><img id="img_menu" src="images/hamburger.png"></div--->
         <div><img id="img_menu" src="images/hamburger.png"></div>
         <div class="header_text"><h1>Halifax Canoe and Kayak</h1></Div>
         <Nav class="menu_naV">
@@ -14,13 +13,11 @@
     </Div>
 
     <DIV class="loginButton" >
-                <a href="Logout.php"><button id="loginButton" disabled>Login</button></a>
+        <a href="Logout.php"><button id="loginButton" disabled>Login</button></a>
     </DIV>
 
     <?php 
-
         if (basename($_SERVER['PHP_SELF']) != 'index.php') {
-
             echo '<script>document.getElementById("loginButton").disabled = false;</script>';
             echo '<script>document.getElementById("loginButton").innerHTML = "Logout";</script>';
         }

@@ -31,7 +31,7 @@ $Page = $_SERVER['HTTP_REFERER'];
         <Div>
         <br>
         <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('New Account Created')" ; value='Click to create'>
+            <input type='button' name='Release' onclick="confirmAction('New Account Created')" value='Click to create'>
         </div>
 
         <?php include 'footer.php'; ?>

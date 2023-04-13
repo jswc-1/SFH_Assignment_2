@@ -46,7 +46,7 @@ $Page = $_SERVER['HTTP_REFERER'];
         </div>
 
         <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('Good')" ; value='Is it Fixed?'>
+            <input type='button' name='Release' onclick="confirmAction('Good')" value='Is it Fixed?'>
         </div>
 
         <?php include 'footer.php'; ?>

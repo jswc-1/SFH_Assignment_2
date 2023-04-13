@@ -20,13 +20,17 @@
                     <option value="Miss">Miss</option>
                     <option value="Mrs">Mrs</option>
                     <option value="Dr">Dr</option>
+                </select>
+                
                 <input type="text" name="FName" id="FName" placeholder="First Name">
 
                 <input type="text" name="LName" id="FName" placeholder="Last Name">
+
                 <select name="Role" id="Role">
                     <option value="Admin">Admin</option>
                     <option value="Manager">Manager</option>
                     <option value="CEO">CEO</option>
+                </select>
                 <input class="submit" type="submit">
             </form>
         </div>

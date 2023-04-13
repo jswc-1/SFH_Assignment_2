@@ -31,7 +31,7 @@ $Page = $_SERVER['HTTP_REFERER'];
         <Div>
         <br>
         <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('Email Sent!')" ; value='Click to Recovery Password'>
+            <input type='button' name='Release' onclick="confirmAction('Email Sent!')" value='Click to Recovery Password'>
         </div>
 
         <?php include 'footer.php'; ?>

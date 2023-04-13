@@ -15,8 +15,6 @@ session_destroy();
         </script>
     </head>
     
-
-
     <body>
         <?php include 'Header.php'; ?>
 
@@ -28,7 +26,7 @@ session_destroy();
         <hr>
 
         <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction()" ; value='Back to Login Page'>
+            <input type='button' name='Release' onclick="confirmAction()" value='Back to Login Page'>
         </div>
         <?php include 'footer.php'; ?>
     </body>
