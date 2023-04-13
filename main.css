@@ -98,13 +98,17 @@
   .main_content {
     max-width: 1200px;
     margin: 0 auto 0 auto;
+    padding-left: 10px;
   }
 
   .LoginButton {
     margin-top: 20px;
     float: right;
-    padding-right: 5px;
+    padding-right: 10px;
   }
+  
+
+
 /*
   #main_image{
     width: auto;
@@ -160,6 +164,10 @@ padding-bottom: 5px;
 
 .event_desc {
  padding-top: 10px;
+}
+
+.controls {
+  border:1px solid black;
 }
 
 /*Font size change when screen width < 800px */
