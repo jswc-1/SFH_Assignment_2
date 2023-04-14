@@ -1,6 +1,6 @@
 <?php
 session_start();
-$Page = "problem.php";
+$Page = "Logout.php";
 $emailType = $_POST["emailType"];
 $mailMsg = "";
 $mailButtonText = "";
