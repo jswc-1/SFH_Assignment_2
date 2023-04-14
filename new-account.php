@@ -26,12 +26,12 @@ $Page = $_SERVER['HTTP_REFERER'];
             <hr>
         </div>
 
-        <div class="centerdiv">
-            <label>Email</label> <input type="text" name="email address" id="email" placeholder="Email" required>
-        <Div>
         <br>
         <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('New Account Created')" value='Click to create'>
+            <form action="send-email.php" method="post">
+                <input type="hidden" name="emailType" value="newAccount">
+                <input type='submit' value='Click to Create New Account'>
+            </form>
         </div>
 
         <?php include 'footer.php'; ?>

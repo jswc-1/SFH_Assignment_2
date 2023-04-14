@@ -9,12 +9,6 @@ $Page = $_SERVER['HTTP_REFERER'];
         <link rel="stylesheet" href="main.css">
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> 
         
-        <script>
-            function confirmAction(msg) {
-                alert(msg);
-                window.location.href = "<?= $Page ?>";
-            }
-        </script>
     </head>
     
     <body>
@@ -26,12 +20,13 @@ $Page = $_SERVER['HTTP_REFERER'];
             <hr>
         </div>
 
-        <div class="centerdiv">
-            <label>Enter Email to recovery password</label> <input type="text" name="email address" id="email" placeholder="Email" required>
-        <Div>
+        
         <br>
         <div class="centerdiv">
-            <input type='button' name='Release' onclick="confirmAction('Email Sent!')" value='Click to Recovery Password'>
+            <form action="send-email.php" method="post">
+                <input type="hidden" name="emailType" value="lostPassword">
+                <input type='submit' value='Click to Recovery Password'>
+            </form>
         </div>
 
         <?php include 'footer.php'; ?>
